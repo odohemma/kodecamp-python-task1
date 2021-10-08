@@ -20,7 +20,10 @@ def even_numbers_in_list():
             for item in list_input:
                 if item % 2 == 0:
                     even_numbers_list.append(item)
-            print (even_numbers_list)
+            if len (even_numbers_list) > 0:
+                print (even_numbers_list)
+            else:
+                print ('There is no even number in the inputted list.')
         else:
             print ('There are non-integer value(s) in the list, ensure all values are integer values.')
             even_numbers_in_list()
