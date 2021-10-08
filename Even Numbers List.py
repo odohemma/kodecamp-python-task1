@@ -8,6 +8,7 @@ import ast
 
 
 def even_numbers_in_list():
+    even_numbers_list = []
     try:
         list_input = ast.literal_eval(input('Paste your list here: '))
         while len (list_input) == 0:
@@ -17,8 +18,9 @@ def even_numbers_in_list():
         if all(isinstance(item, int) for item in list_input):
             print ('List of even numbers in the list:')
             for item in list_input:
-                if item % 2 == 0:            
-                    print (item)
+                if item % 2 == 0:
+                    even_numbers_list.append(item)
+            print (even_numbers_list)
         else:
             print ('There are non-integer value(s) in the list, ensure all values are integer values.')
             even_numbers_in_list()
