@@ -25,10 +25,10 @@ def even_numbers_in_list():
             else:
                 print ('There is no even number in the inputted list.')
         else:
-            print ('There are non-integer value(s) in the list, ensure all values are integer values.')
+            print ('There are non-integer value(s) in the list, ensure all values are integers.')
             even_numbers_in_list()
     except (ValueError, SyntaxError):
-        print ('What you inputted is not a list of integers. A list example of integers is [1,2,3,4,5,6]')
+        print ('What you inputted is not a list of integers. An example of list of integers is [1,2,3,4,5,6]')
         even_numbers_in_list()
         
 even_numbers_in_list()
